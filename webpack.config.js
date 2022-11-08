@@ -11,10 +11,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                loader: 'file-loader',
-                options: {
-                    name: '/public/icons/[name].[ext]'
-                }
+                type: "asset/resource"
             },
         ],
     },
